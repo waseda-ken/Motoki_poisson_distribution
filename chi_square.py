@@ -3,7 +3,8 @@ import numpy as np
 from scipy import stats
 import matplotlib.pyplot as plt
 
-unit_time = 0.5
+# 分割後の各行を 0.5曲として扱う
+unit_time = 1.0
 
 df = pd.read_csv('Mrs_total_pronouns.csv')
 counts = df['total'].values
